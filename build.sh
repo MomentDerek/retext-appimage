@@ -40,7 +40,8 @@ sed -i 's|AI\x02|\x00\x00\x00|' *.AppImage
 
 # fetch some assets from the ReText repo
 wget https://github.com/retext-project/retext/raw/master/data/me.mitya57.ReText.desktop
-wget https://github.com/retext-project/retext/raw/master/icons/retext.svg
+wget https://github.com/retext-project/retext/raw/master/ReText/icons/retext.svg
+
 
 # set up a basic AppDir; we cannot finish the AppImage already since we need to find out the ReText version after installing it from PyPI
 export PIP_REQUIREMENTS="ReText pymdown-extensions pyenchant"
