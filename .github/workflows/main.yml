@@ -8,7 +8,7 @@ env:
 jobs:
   appimage-x86_64:
     name: AppImage x86_64
-    runs-on: ubuntu-latest
+    runs-on: ARM64
     steps:
       - uses: actions/checkout@v2
       - name: Build AppImage
