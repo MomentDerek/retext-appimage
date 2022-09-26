@@ -33,8 +33,7 @@ OLD_CWD=$(readlink -f .)
 pushd "$BUILD_DIR"
 
 # get linuxdeploy and its conda plugin
-wget https://files.gitee.com/group1/M00/1B/0C/CgAAEmC0eH2ATlmzAVIksNQubBs.AppIma?token=48b95f5342b4eff7006454ed13fd7c44&ts=1664208671&attname=linuxdeployqt-aarch64.AppImage
-mv linuxdeployqt-aarch64.AppImage linuxdeploy-aarch64.AppImagev
+wget https://momincong.com/upload/2022/09/linuxdeploy-aarch64.AppImage
 wget https://github.com/linuxdeploy/linuxdeploy-plugin-conda/raw/master/linuxdeploy-plugin-conda.sh
 chmod +x linuxdeploy*
 sed -i 's|AI\x02|\x00\x00\x00|' *.AppImage
